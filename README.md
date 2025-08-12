@@ -11,7 +11,6 @@ A program that retrieves a list of transport from a secured service endpoint and
 ### 1. Clone the Repo
 ```bash
 https://github.com/Nehaharish98/REST-Service-Access-with-JsonWebToken.git
-cd transport-api-challenge
 ```
 
 ### 2. Install Dependencies
