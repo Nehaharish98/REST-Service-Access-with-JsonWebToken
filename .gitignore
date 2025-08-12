@@ -1,8 +1,17 @@
+# virtual environment
 .venv/
 venv/
 
+# python bytecode
 __pycache__/
 *.py[cod]
 
+# IDE files
 .vscode/
 .idea/
+
+
+.DS_Store
+
+# env variables with secrets
+.env

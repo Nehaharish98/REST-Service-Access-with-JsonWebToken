@@ -1,19 +1,23 @@
+import os
 import requests
+from dotenv import load_dotenv
 from tabulate import tabulate
 
-AUTH_URL = "https://mbn-provider.authentication.eu12.hana.ondemand.com/oauth/token"
-TRANSPORT_URL = "https://interview-demo-transport-backend.cfapps.eu12.hana.ondemand.com/transports"
+load_dotenv() # load the '.env' file
 
-CLIENT_ID = "sb-interview_demo_transport_app!b923597"
-CLIENT_SECRET = "e5a58e12-6849-4833-8800-5eee585f347c$H0EkGqSXYJXVJTOMOocIcfufzbPmpeastGoMvrbKfIQ="
-SCOPE = "interview_demo_transport_app!b923597.transportread"
+AUTH_URL = os.getenv("AUTH_URL")
+TRANSPORT_URL = os.getenv("TRANSPORT_URL")
+
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+SCOPE = os.getenv("SCOPE")
 
 # the function requests for OAuth token with the credentials available
 # access token is returned on success, none on failure
 def get_auth_token():
     payload = {
         "grant_type": "client_credentials",
-        "response_type": "token",
+        #"response_type": "token",
         "scope": SCOPE
     }
     headers = {
