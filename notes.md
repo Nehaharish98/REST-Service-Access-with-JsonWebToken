@@ -22,6 +22,8 @@
 - parse json and print
 - tabulate 
 - secure the sensitive data using .env.example and .env file
+- validate responses before accessing data to avoid runtime errors
+- find 401 Unauthorized status to check token expiration or invalidity
 
 # learnings,findings, etc,.
 - .DS_Store gets created on running the script on local MacOS machine hidden system files created by Finder to store folder-specific display metadata such as icon positions, view mode, and window size. They appear automatically in every folder opened in Finder and help macOS retain folder appearance settings.
