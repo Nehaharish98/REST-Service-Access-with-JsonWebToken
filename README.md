@@ -1,15 +1,23 @@
 # REST-Service-Access-with-JsonWebToken
 A program that retrieves a list of transport from a secured service endpoint and prints the details to the console.
 
+## How It Works
+1. **Get OAuth Token** — POST to token endpoint with client credentials to get a bearer access token.  
+2. **Fetch Transport List** — GET request to the transport list API with the token in the Authorization header.  
+3. **Display Results** — Prints transport list in a neat table using `tabulate`.
 
 ## Setup & Run
 
 ### 1. Clone the Repo
+```bash
 https://github.com/Nehaharish98/REST-Service-Access-with-JsonWebToken.git
 cd transport-api-challenge
+```
 
 ### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 3. Configure Environment
 - The `.env` file stores sensitive data like CLIENT_ID and CLIENT_SECRET. It is **never committed** to Git
@@ -17,7 +25,9 @@ pip install -r requirements.txt
 - This step protects sensitive data out of the codebase, improving security and flexibility
 
 ### 4. Run the Script
+```bash
 python script.py
+```
 
 ## Requirements
 - Python 3.8+
