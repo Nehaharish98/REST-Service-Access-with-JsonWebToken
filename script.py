@@ -34,9 +34,7 @@ missing_vars = [
     if not globals()[v]
 ]
 if missing_vars:
-    log_warn(
-        "set the values in the .env file as shown in .env.example: {', '.join(missing_vars)}"
-    )
+    log_warn("set the values as per .env.example: {', '.join(missing_vars)}")
     sys.exit(1)
 
 
@@ -119,7 +117,8 @@ def print_transport_list(data):
     ]  # table header
     print(tabulate(table_rows, headers=headers))
     log_info(
-        f"{len(table_rows)} transport data is fetched at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}."
+        f"{len(table_rows)} data is fetched at "
+        f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}."
     )
 
 

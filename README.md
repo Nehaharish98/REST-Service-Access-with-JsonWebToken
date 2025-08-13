@@ -2,8 +2,8 @@
 A program that retrieves a list of transport from a secured service endpoint and prints the details to the console.
 
 ## How It Works
-1. **Get OAuth Token** — POST to token endpoint with client credentials to get a bearer access token.  
-2. **Fetch Transport List** — GET request to the transport list API with the token in the Authorization header.  
+1. **Get OAuth Token** — POST to token endpoint with client credentials to get a bearer access token.
+2. **Fetch Transport List** — GET request to the transport list API with the token in the Authorization header.
 3. **Display Results** — Prints transport list in a neat table using `tabulate`.
 
 ## Setup & Run
@@ -13,7 +13,7 @@ A program that retrieves a list of transport from a secured service endpoint and
 https://github.com/Nehaharish98/REST-Service-Access-with-JsonWebToken.git
 ```
 
-Can use a vertiual environment for the requirements/dependencies isolation for this specific project. 
+Can use a vertiual environment for the requirements/dependencies isolation for this specific project.
 ### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
@@ -34,8 +34,15 @@ python script.py
 - requests
 - python-dotenv
 - tabulate
-- flake8 
+- flake8
 - black
+
+## Best Practices
+the project includes
+- Unit Test
+- Lint and Formating
+- Makefile
+- Pre-commit hooks
 
 ## Developing, learning, findings Log
 See my [`notes.md`] for more informations
@@ -52,5 +59,6 @@ See my [`notes.md`] for more informations
 9. curl command convertor: https://curlconverter.com/python/
 10. unit test: https://medium.com/@sachinsoni600517/unit-testing-in-python-a-comprehensive-guide-for-beginners-985eec71bb4d
 11. mock unit test: https://realpython.com/python-mock-library/
+12. black https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
 
 I referenced official documentation and sources which i have referred to and tested incrementally.
