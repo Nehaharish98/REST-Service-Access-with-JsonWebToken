@@ -57,6 +57,7 @@ make clean
 - tabulate
 - flake8
 - black
+- pre-commit
 
 ## Best Practices
 the project includes
