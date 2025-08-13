@@ -6,7 +6,7 @@ A program that retrieves a list of transport from a secured service endpoint and
 2. **Fetch Transport List** — GET request to the transport list API with the token in the Authorization header.
 3. **Display Results** — Prints transport list in a neat table using `tabulate`.
 
-## Setup & Run
+## Reproduceability
 
 ### 1. Clone the Repo
 ```bash
@@ -29,6 +29,27 @@ pip install -r requirements.txt
 python script.py
 ```
 
+### 5. Run Unit Test
+```bash
+python unittest tests/test_script.py
+```
+## Alternately can use makefile
+**With Makefile:**
+```bash
+make install
+ ```
+ ```bash
+make test
+ ```
+ ```bash
+make lint
+ ```
+ ```bash
+make precommit
+ ```
+ ```bash
+make clean
+ ```
 ## Requirements
 - Python 3.8+
 - requests
@@ -60,5 +81,6 @@ See my [`notes.md`] for more informations
 10. unit test: https://medium.com/@sachinsoni600517/unit-testing-in-python-a-comprehensive-guide-for-beginners-985eec71bb4d
 11. mock unit test: https://realpython.com/python-mock-library/
 12. black https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
+13. pre-commit hook https://pre-commit.com/
 
 I referenced official documentation and sources which i have referred to and tested incrementally.
