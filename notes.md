@@ -33,3 +33,4 @@
 - additional .env.example is created to show someone like customer how to set up or enter the client id, secrect, scope
 - edge case testing and handling: edge cases help identify unexpected behaviors and potential system vulnerabilities. Edge cases involve inputs or scenarios that push the limits of the API’s intended behavior, exposing bugs that may not be evident in normal conditions.  
 - while running the tests today i encountered a error, where i had to start a unittest file name with test_XXX.py instead i had used tests_XXX.py
+- i also learnt that in unit test the next improvements can be made adding the mock tests, which is helpfull as it focus tests on code’s logic, not the behavior or availability of external systems. 

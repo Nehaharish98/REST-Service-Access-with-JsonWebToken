@@ -34,6 +34,8 @@ python script.py
 - requests
 - python-dotenv
 - tabulate
+- flake8 
+- black
 
 ## Developing, learning, findings Log
 See my [`notes.md`] for more informations
@@ -48,5 +50,7 @@ See my [`notes.md`] for more informations
 7. Managing JSON parsing errors to prevent crashes: https://docs.python.org/3/library/json.html#json.JSONDecodeError
 8. Dealing with OAuth token expiration and invalid tokens (HTTP 401): https://datatracker.ietf.org/doc/html/rfc6749#section-5.1 , https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/
 9. curl command convertor: https://curlconverter.com/python/
+10. unit test: https://medium.com/@sachinsoni600517/unit-testing-in-python-a-comprehensive-guide-for-beginners-985eec71bb4d
+11. mock unit test: https://realpython.com/python-mock-library/
 
 I referenced official documentation and sources which i have referred to and tested incrementally.
