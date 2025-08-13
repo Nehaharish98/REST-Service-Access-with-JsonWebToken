@@ -13,6 +13,7 @@ A program that retrieves a list of transport from a secured service endpoint and
 https://github.com/Nehaharish98/REST-Service-Access-with-JsonWebToken.git
 ```
 
+Can use a vertiual environment for the requirements/dependencies isolation for this specific project. 
 ### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt

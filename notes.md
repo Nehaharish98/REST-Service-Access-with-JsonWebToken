@@ -24,6 +24,7 @@
 - secure the sensitive data using .env.example and .env file
 - validate responses before accessing data to avoid runtime errors
 - find 401 Unauthorized status to check token expiration or invalidity
+- adding basic unit test for the script
 
 # 🧪 learnings,findings, etc,.
 - .DS_Store gets created on running the script on local MacOS machine hidden system files created by Finder to store folder-specific display metadata such as icon positions, view mode, and window size. They appear automatically in every folder opened in Finder and help macOS retain folder appearance settings.
@@ -31,3 +32,4 @@
 - adding the .env to .gitignore so that its not published or added to the main repo, which helps to keep the sensitive data private and secure
 - additional .env.example is created to show someone like customer how to set up or enter the client id, secrect, scope
 - edge case testing and handling: edge cases help identify unexpected behaviors and potential system vulnerabilities. Edge cases involve inputs or scenarios that push the limits of the API’s intended behavior, exposing bugs that may not be evident in normal conditions.  
+- while running the tests today i encountered a error, where i had to start a unittest file name with test_XXX.py instead i had used tests_XXX.py
