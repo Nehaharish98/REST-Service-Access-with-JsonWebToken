@@ -28,11 +28,10 @@ CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 SCOPE = os.getenv("SCOPE")
 
 # check for the .env file values
-missing_vars = [
-    v
-    for v in ["AUTH_URL", "TRANSPORT_URL", "CLIENT_ID", "CLIENT_SECRET", "SCOPE"]
-    if not globals()[v]
-]
+required_vars = ["AUTH_URL", "TRANSPORT_URL", "CLIENT_ID", "CLIENT_SECRET", "SCOPE"]
+
+missing_vars = [var for var in required_vars if not os.getenv(var)]
+
 if missing_vars:
     log_warn("set the values as per .env.example: {', '.join(missing_vars)}")
     sys.exit(1)
